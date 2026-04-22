@@ -1,8 +1,6 @@
 <?php
 session_start();
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
+include 'koneksi_db.php';
 // Aktifkan mode pelaporan error biar tidak blank putih
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 ini_set('display_errors', 1);

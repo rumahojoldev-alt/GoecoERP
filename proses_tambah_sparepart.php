@@ -2,9 +2,7 @@
 session_start();
 date_default_timezone_set('Asia/Jakarta');
 
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
+include 'koneksi_db.php';
 if(isset($_POST['simpan_sparepart'])) {
     
     // 1. BUAT ID ITEM OTOMATIS (Format: SP-TahunBulanTanggalJamMenitDetik)

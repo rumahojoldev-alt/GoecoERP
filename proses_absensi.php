@@ -3,9 +3,7 @@ session_start();
 // 1. WAJIB SET TIMEZONE DI PALING ATAS
 date_default_timezone_set('Asia/Jakarta');
 
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
+include 'koneksi_db.php';
 if (!isset($_SESSION['user_login'])) { exit; }
 
 $aksi = $_GET['aksi'] ?? '';

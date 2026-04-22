@@ -1,7 +1,5 @@
 <?php
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
+include 'koneksi_db.php';
 if(isset($_POST['edit_motor'])) {
     // Tangkap semua data dari form modal
     $id     = $_POST['id'];

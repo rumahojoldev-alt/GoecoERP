@@ -1,7 +1,6 @@
 <?php
 // get_driver.php
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
+include 'koneksi_db.php';
 
 if(isset($_POST['nopol'])) {
     $nopol = mysqli_real_escape_string($koneksi, $_POST['nopol']);

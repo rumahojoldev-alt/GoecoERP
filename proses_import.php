@@ -1,7 +1,5 @@
 <?php
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
+include 'koneksi_db.php';
 if(isset($_POST['import'])) {
     $fileName = $_FILES['file_csv']['tmp_name'];
     

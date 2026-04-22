@@ -3,9 +3,7 @@ session_start();
 // Wajib set timezone agar waktu input akurat
 date_default_timezone_set('Asia/Jakarta');
 
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
+include 'koneksi_db.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     // 1. Tangkap Data Utama & Status Baru

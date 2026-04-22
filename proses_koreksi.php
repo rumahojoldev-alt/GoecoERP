@@ -1,8 +1,6 @@
 <?php
 // proses_koreksi.php
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
+include 'koneksi_db.php';
 session_start();
 
 // Pastikan hanya yang login yang bisa akses

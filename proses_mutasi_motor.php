@@ -1,7 +1,5 @@
 <?php
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
+include 'koneksi_db.php';
 if(isset($_POST['simpan_mutasi'])) {
     $nopol      = $_POST['nopol'];
     $tanggal    = $_POST['tanggal'];

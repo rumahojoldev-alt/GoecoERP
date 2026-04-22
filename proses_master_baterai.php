@@ -3,9 +3,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$host = "localhost"; $user = "root"; $pass = ""; $db = "db_rumahojol";
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
+include 'koneksi_db.php';
 if (!$koneksi) { die("Koneksi database putus: " . mysqli_connect_error()); }
 
 if (isset($_POST['simpan_baterai'])) {
